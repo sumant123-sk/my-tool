@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnetic Web Experience | AI | Google | ChatGPT | Crypto | Trending Topics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      }
+    }
+
+    .cursor-effect {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, #00ffff, transparent);
+      mix-blend-mode: screen;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      transition: transform 0.1s ease;
+    }
+
+    .section {
+      padding: 100px 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      margin: 40px auto;
+      width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+    }
+
+    .glow-btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      background: #0ff;
+      color: #000;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #0ff;
+      transition: 0.3s ease;
+    }
+
+    .glow-btn:hover {
+      box-shadow: 0 0 30px #0ff, 0 0 60px #0ff;
+    }
+
+    .links {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .links a {
+      margin: 10px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #0ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #0ff;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cursor-effect" id="cursor"></div>
+
+  <header>
+    <h1>Magnetic Web Experience</h1>
+    <p>Engage your users with a powerful animated interface</p>
+    <button class="glow-btn">Start Exploring</button>
+  </header>
+
+  <div class="links">
+    <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+    <a href="https://www.google.com" target="_blank">Google AI</a>
+    <a href="https://coinmarketcap.com" target="_blank">Crypto Market</a>
+    <a href="https://trends.google.com" target="_blank">Google Trends</a>
+    <a href="https://www.nvidia.com/en-in/ai/" target="_blank">NVIDIA AI</a>
+    <a href="https://bard.google.com" target="_blank">Google Bard</a>
+  </div>
+
+  <div class="section">
+    🚀 Smooth Scrolling Animations with Custom Cursor Effects
+  </div>
+
+  <div class="section">
+    🎨 Glowing Hover Effects to Keep Users Interacting
+  </div>
+
+  <div class="section">
+    🧠 Perfect for Personal Portfolios, Tech Startups & AI Tools
+  </div>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.top = `${e.clientY}px`;
+      cursor.style.left = `${e.clientX}px`;
+    });
+  </script>
+</body>
+
+</html>
+
+<!-- PYTHON FLASK BACKEND (save as app.py and run with Flask) -->
+# from flask import Flask, render_template
+# app = Flask(__name__)
+
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
+
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
+<!-- Directory Structure -->
+# project_folder/
+# ├── templates/
+# │   └── index.html
+# └── app.py
